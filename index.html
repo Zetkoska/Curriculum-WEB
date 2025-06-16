@@ -4,81 +4,84 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sebastian Arredondo - CV</title>
+    <title>Sebastian Arredondo - Landing Page</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <div class="cv-container">
-        <div class="cv-header">
-            <div class="cv-header-img">
+    <header>
+        <nav class="navbar">
+            <div class="logo">Sebastian Arredondo</div>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">&#9776;</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-content">
                 <img src="foto-perfil.jpg" alt="Foto de perfil" class="profile-pic" />
+                <div class="hero-text">
+                    <h1>Sebastian Arredondo</h1>
+                    <p>Muchacho trabajador, honesto y respetuoso, con muchas ganas de aprender y aportar en tu próximo
+                        proyecto 🚀</p>
+                    <a href="#contact" class="cta-btn">Contáctame</a>
+                </div>
             </div>
-            <div class="cv-header-name">
-                <h1>Sebastian Arredondo</h1>
+        </section>
+        <section class="about" id="about">
+            <h2>Sobre mí</h2>
+            <p>Tengo experiencia en atención al cliente, despacho de materiales y ventas. Me considero una persona
+                responsable, con habilidades para el trabajo en equipo y la resolución de problemas.</p>
+            <ul class="skills">
+                <li>Atención al cliente</li>
+                <li>Despacho de material</li>
+                <li>Venta de productos</li>
+                <li>Cocina de comida rápida</li>
+                <li>Trabajo de almacén</li>
+            </ul>
+        </section>
+        <section class="experience" id="experience">
+            <h2>Experiencia Laboral</h2>
+            <div class="job">
+                <span class="job-date">04/2023 – Presente</span>
+                <h3>Mesonero en Cometa FastFood</h3>
+                <ul>
+                    <li>Atención y satisfacción al cliente mediante su paladar.</li>
+                    <li>Entrega de comida</li>
+                    <li>Atención al cliente</li>
+                </ul>
             </div>
-        </div>
-        <div class="cv-content">
-            <div class="cv-left">
-                <section class="profile">
-                    <h2>Perfil</h2>
-                    <p>Muchacho trabajador, honesto, respetuoso y con muchas habilidades que demostrar en cualquier
-                        oportunidad laboral presentada, ya que lo que más tengo son ganas de trabajar.</p>
-                </section>
-                <section class="experience">
-                    <h2>Experiencia Laboral</h2>
-                    <div class="job">
-                        <span class="job-date">04/2023 – Presente</span>
-                        <h3>Mesonero en Cometa FastFood</h3>
-                        <ul>
-                            <li>Atención y satisfacción al cliente mediante su paladar.</li>
-                            <li>Entrega de comida</li>
-                            <li>Atención al cliente</li>
-                        </ul>
-                    </div>
-                    <div class="job">
-                        <span class="job-date">07/2019 – 08/2021</span>
-                        <h3>Vendedor/Almacenista/Despachador en El Mundo de las Manillas</h3>
-                        <ul>
-                            <li>Atención al público a la hora de la venta</li>
-                            <li>Despacho de mercancía al mayor</li>
-                            <li>Almacenado de mercancía</li>
-                        </ul>
-                    </div>
-                </section>
+            <div class="job">
+                <span class="job-date">07/2019 – 08/2021</span>
+                <h3>Vendedor/Almacenista/Despachador en El Mundo de las Manillas</h3>
+                <ul>
+                    <li>Atención al público a la hora de la venta</li>
+                    <li>Despacho de mercancía al mayor</li>
+                    <li>Almacenado de mercancía</li>
+                </ul>
             </div>
-            <div class="cv-right">
-                <section class="contact">
-                    <h2>Contacto</h2>
-                    <p>zetkoska@gmail.com<br>+58 4127929215</p>
-                </section>
-                <section class="skills">
-                    <h2>Skills</h2>
-                    <ul>
-                        <li>Atención al cliente</li>
-                        <li>Despacho de material</li>
-                        <li>Venta de productos</li>
-                        <li>Cocina de comida rápida</li>
-                        <li>Trabajo de almacén</li>
-                    </ul>
-                </section>
-                <section class="social">
-                    <h2>Social</h2>
-                    <ul>
-                        <li><a href="#">Linkedin</a></li>
-                        <li><a href="#">Dribbble</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Medium</a></li>
-                        <li><a href="#">Github</a></li>
-                    </ul>
-                </section>
+        </section>
+        <section class="contact-section" id="contact">
+            <h2>Contacto</h2>
+            <p>Email: <a href="mailto:zetkoska@gmail.com">zetkoska@gmail.com</a></p>
+            <p>Teléfono: +58 4127929215</p>
+            <div class="social-links">
+                <a href="#" aria-label="Linkedin">Linkedin</a>
+                <a href="#" aria-label="Facebook">Facebook</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
+                <a href="#" aria-label="Github">Github</a>
             </div>
-        </div>
-        <footer class="footer">
-            <h2>Trabajemos juntos en tu siguiente proyecto 🚀</h2>
-        </footer>
-    </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Sebastian Arredondo. Trabajemos juntos en tu siguiente proyecto 🚀</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

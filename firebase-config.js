@@ -5,12 +5,13 @@ import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebas
 import { getFirestore } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js';
 
 const firebaseConfig = {
-    apiKey: "TU_API_KEY_AQUI",
-    authDomain: "tu-proyecto.firebaseapp.com",
-    projectId: "tu-proyecto-id",
-    storageBucket: "tu-proyecto.appspot.com",
-    messagingSenderId: "123456789",
-    appId: "tu-app-id"
+    apiKey: "AIzaSyDKyK5LFIlgQuwBovBaPBVNfMyNc-FJFCk",
+    authDomain: "landing-page-cv-58460.firebaseapp.com",
+    projectId: "landing-page-cv-58460",
+    storageBucket: "landing-page-cv-58460.firebasestorage.app",
+    messagingSenderId: "439410557855",
+    appId: "1:439410557855:web:1ae515bc866fcc373773aa",
+    measurementId: "G-X8HM8G38KD"
 };
 
 // Inicializar Firebase

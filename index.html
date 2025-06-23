@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sebastian Arredondo - Landing Page</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- Firebase SDK -->
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
+        import { getFirestore } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js';
+    </script>
 </head>
 
 <body>
@@ -68,20 +73,48 @@
         </section>
         <section class="contact-section" id="contact">
             <h2>Contacto</h2>
-            <p>Email: <a href="mailto:zetkoska@gmail.com">zetkoska@gmail.com</a></p>
-            <p>Teléfono: +58 4127929215</p>
-            <div class="social-links">
-                <a href="#" aria-label="Linkedin">Linkedin</a>
-                <a href="#" aria-label="Facebook">Facebook</a>
-                <a href="#" aria-label="Twitter">Twitter</a>
-                <a href="#" aria-label="Github">Github</a>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <p>Email: <a href="mailto:zetkoska@gmail.com">zetkoska@gmail.com</a></p>
+                    <p>Teléfono: +58 4127929215</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Linkedin">Linkedin</a>
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="Github">Github</a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Envíame un mensaje</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nombre completo *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Asunto *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
+                </div>
             </div>
         </section>
     </main>
     <footer class="footer">
         <p>&copy; 2024 Sebastian Arredondo. Trabajemos juntos en tu siguiente proyecto 🚀</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
 </body>
 
 </html>
